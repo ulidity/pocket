@@ -1,2 +1,9 @@
-# pocket
-distributed cache
+pocket
+=====
+
+An OTP application
+
+Build
+-----
+
+    $ rebar3 compile
