@@ -20,7 +20,8 @@ init([]) ->
     SupFlags = #{
       strategy => one_for_one, intensity => 1, period => 10
     },
-    ChildSpecs = [#{
-      id => pocket_watch, start => {pocket_watch, start_link, []}
-    }],
+    ChildSpecs = [
+        #{id => pocket_watch, start => {pocket_watch, start_link, []}},
+        #{id => pocket_data, start => {pocket_data, start_link, []}}
+    ],
     {ok, {SupFlags, ChildSpecs}}.
