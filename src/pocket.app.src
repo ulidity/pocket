@@ -1,5 +1,5 @@
 {application, pocket,
- [{description, "An OTP application"},
+ [{description, "Simple distributed cache"},
   {vsn, "0.1.0"},
   {registered, []},
   {mod, {pocket_app, []}},
@@ -10,6 +10,6 @@
   {env,[]},
   {modules, []},
 
-  {licenses, ["Apache 2.0"]},
+  {licenses, ["MIT"]},
   {links, []}
  ]}.

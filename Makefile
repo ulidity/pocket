@@ -1,8 +1,8 @@
 compile:
-	rebar3 compile
+	@ rebar3 compile
 
 shell:
-	rebar3 shell
+	@ rebar3 as dev shell --sname $(NODE)@localhost
 
 dialyzer:
-	rebar3 dialyzer
+	@ rebar3 dialyzer
